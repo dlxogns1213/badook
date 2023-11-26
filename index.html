@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>바둑 게임</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        main {
+            max-width: 85px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="badukCanvas" width="760" height="760"></canvas>
+    <script src="script.js"></script>
+    <main>
+    <button onclick="save()">저장하기</button>
+    </main>
+    <script>
+        function save() {
+            alert('교본이 성공적으로 저장되었습니다!');
+        }
+    </script>
+</body>
+</html>
